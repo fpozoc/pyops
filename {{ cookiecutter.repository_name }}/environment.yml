@@ -1,0 +1,9 @@
+name: {{ cookiecutter.conda_env_name }}
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python={{ cookiecutter.python_version }}
+  - pip
+  - pip:
+    - -e .[dev]

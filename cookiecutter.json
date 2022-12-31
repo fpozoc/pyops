@@ -1,0 +1,15 @@
+{
+    "author": "Fernando Pozo",
+    "author_email": "fpozoc@gmx.com",
+    "github_user": "fpozoc",
+    "repository_user": ["{{ cookiecutter.github_user }}", "Your GitHub organization"],
+    "project_name": "Python devops project template ",
+    "project_description": "Python Project template designed for a cool variety of projects",
+    "repository_name": "{{ cookiecutter.project_name.strip().lower().replace(' ', '-') }}",
+    "package_name": "{{ cookiecutter.project_name.strip().lower().replace(' ', '-').replace('-', '_') }}",
+    "repository_url": "https://github.com/{{ cookiecutter.repository_user }}/{{ cookiecutter.repository_name }}",
+    "conda_env_name": "{{ cookiecutter.repository_name }}",
+    "python_version": "3.9",
+    "license": ["MIT", "BSD-3-Clause", "Apache Software License 2.0", "GNU General Public License v3.0"],
+    "__version": "0.1.0"
+}
